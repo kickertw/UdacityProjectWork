@@ -36,9 +36,9 @@
             "ConstraintDescription": "must be the name of an existing EC2 KeyPair."
         },
         "InstanceType": {
-            "Description": "WebServer EC2 instance type",
+            "Description": "EC2 instance types for the Bastions and WebServers. (We could make a 2nd parameter to separate instance types for both the bastions and web servers, but this is just to simplify things for this project)",
             "Type": "String",
-            "Default": "t2.micro",
+            "Default": "t3.small",
             "AllowedValues": [
                 "t1.micro",
                 "t2.nano",
